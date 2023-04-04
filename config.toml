@@ -1,14 +1,14 @@
 baseURL = "/"
-title = "データベース演習II (2023)"
+title = "データベース演習II"
 
 # Language settings
-# contentDir = "content/en"
-# defaultContentLanguage = "en"
-# defaultContentLanguageInSubdir = false
+contentDir = "content"
+defaultContentLanguage = "ja"
+defaultContentLanguageInSubdir = false
 # Useful when translating.
-# enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = true
 
-# enableRobotsTXT = true
+enableRobotsTXT = true
 
 # Will give values to .Lastmod etc.
 enableGitInfo = true
@@ -58,7 +58,13 @@ anchor = "smart"
 
 # Language configuration
 
-# [languages]
+[languages]
+[languages.ja]
+title = "データベース演習II"
+description = "データベース演習II"
+languageName ="日本語"
+# Weight used for sorting.
+weight = 1
 # [languages.en]
 # title = "Goldydocs"
 # description = "A Docsy example site"
@@ -102,7 +108,7 @@ copyright = "Kosaku Kimura"
 # privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
-# images = ["images/project-illustration.png"]
+images = ["images/project-illustration.png"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
@@ -120,12 +126,12 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-# url_latest_version = "https://example.com"
+url_latest_version = "https://kimusaku.github.io/dbe2-2023/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/kimusaku/dbe2-2023"
+# github_repo = "https://github.com/kimusaku/dbe2-2023"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-# github_project_repo = "https://github.com/google/docsy"
+# github_project_repo = "https://github.com/kimusaku/dbe2-2023"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -151,9 +157,9 @@ prism_syntax_highlighting = false
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 # Set to true to disable the About link in the site footer
-footer_about_disable = false
+footer_about_disable = true
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
-navbar_logo = true
+navbar_logo = false
 # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
@@ -178,7 +184,7 @@ sidebar_search_disable = false
 enable = false
 
 # [params.links]
-# # End user relevant links. These will show up on left side of footer and in the community page if you have one.
+# # # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 # [[params.links.user]]
 #   name = "User mailing list"
 #   url = "https://example.org/mail"
